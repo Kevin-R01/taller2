@@ -2,7 +2,7 @@ package salud;
 
 import java.util.Scanner;
 
-public class Persona {
+public class Reto1 {
 
         public String tipoDoc;
         public String documento;
@@ -68,7 +68,7 @@ public class Persona {
     public static void main(String[] args) {
         
 
-        Persona llamar=new Persona();
+        Reto1 llamar=new Reto1();
 
         llamar.pedirDatos();
         llamar.mostrarPersona();
