@@ -2,7 +2,7 @@ package salud;
 
 import java.util.Scanner;
 
-public class Calculador {
+public class Persona {
 
         public String tipoDoc;
         public String documento;
@@ -48,19 +48,19 @@ public class Calculador {
     public void calcularImc() {
         double imc = peso / (estatura * estatura);
         if (imc < 20) {
-            System.out.println("El peso está por debajo de lo ideal");
+            System.out.println("el peso está por debajo de lo ideal");
         } else if (imc >= 20 && imc <= 25) {
-            System.out.println("El peso es ideal");
+            System.out.println("el peso es ideal");
         } else {
-            System.out.println("Hay sobrepeso");
+            System.out.println("eay sobrepeso");
         }
     }
 
     public void mayorEdad() {
         if (edad >= 18) {
-            System.out.println("Es mayor de edad");
+            System.out.println("es mayor de edad");
         } else {
-            System.out.println("Es menor de edad");
+            System.out.println("es menor de edad");
         }
       
 
@@ -68,7 +68,7 @@ public class Calculador {
     public static void main(String[] args) {
         
 
-            Calculador llamar=new Calculador();
+        Persona llamar=new Persona();
 
         llamar.pedirDatos();
         llamar.mostrarPersona();
